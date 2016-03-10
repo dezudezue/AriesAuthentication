@@ -1,0 +1,29 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from HelloWordService WSDL service -->
+
+  <service name="HelloWord" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://test.mobilecorridor.com"/>
+      <parameter name="wsdlServiceElement" value="HelloWordService"/>
+      <parameter name="schemaQualified" value="http://test.mobilecorridor.com"/>
+      <parameter name="wsdlServicePort" value="HelloWord"/>
+      <parameter name="className" value="com.mobilecorridor.test.HelloWordSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="HelloWord"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="addValue" qname="operNS:addValue" xmlns:operNS="http://test.mobilecorridor.com" returnQName="retNS:addValueReturn" xmlns:retNS="http://test.mobilecorridor.com" returnType="rtns:double" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:value" xmlns:pns="http://test.mobilecorridor.com" type="tns:double" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="addValue"/>
+
+  </service>
+</deployment>

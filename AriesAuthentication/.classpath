@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_60">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="jars/jersey-server.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-core-1.19.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-servlet-1.19.jar"/>
+	<classpathentry kind="lib" path="jars/asm-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/asm-all-4.0.jar"/>
+	<classpathentry kind="lib" path="jars/asm-analysis-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/asm-commons-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/asm-tree-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/asm-util-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/asm-xml-5.1.jar"/>
+	<classpathentry kind="lib" path="jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-bundle-1.19.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-client.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-common.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-container-servlet-core.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-container-servlet.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-json-1.19.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-media-jaxb.jar"/>
+	<classpathentry kind="lib" path="jars/json-20160212.jar"/>
+	<classpathentry kind="lib" path="jars/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="jars/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-client-1.14.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-core-1.14.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-json-1.14.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-server-1.14.jar"/>
+	<classpathentry kind="lib" path="jars/jersey-servlet-1.14.jar"/>
+	<classpathentry kind="lib" path="jars/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="jars/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
